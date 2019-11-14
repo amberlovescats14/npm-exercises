@@ -1,4 +1,10 @@
-const $ = require('jquery')
+// const $ = require('jquery')
+// const {item, thing} = require('./item.js')
+import $ from 'jquery'
+const {item, thing} = require('./item')
+
+import {cami, mason} from './importing'
+import {cami as daughter, mason as son} from './importing'
 
 $(document).ready(function () {
     const sayHello = () => console.log(`Hello`)
@@ -7,6 +13,12 @@ $(document).ready(function () {
         background: 'black',
         color: 'pink'
     })
+    console.log(item.name)
+    console.log(thing.name)
+    
+    
+    console.log(son.gender)
+    
     
     
 })
